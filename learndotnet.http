@@ -1,0 +1,41 @@
+@learndotnet_HostAddress = https://localhost:7187
+
+GET {{learndotnet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+
+GET {{learndotnet_HostAddress}}/api/associate/Getall
+
+###
+
+POST {{learndotnet_HostAddress}}/api/associate/Create
+Content-Type: application/json
+
+{
+  "code": "031",
+  "name": "Ranveer",
+  "email": "rn@in.com",
+  "phone": "899900000",
+  "creditlimit": 10000,
+  "isActive": true,
+  "taxcode": 2
+}
+
+###
+
+PUT {{learndotnet_HostAddress}}/api/associate/Update?code=031
+Content-Type: application/json
+
+{
+  "code": "031",
+      "name": "Ranveer Singh",
+      "email": "rns@in.com",
+      "phone": "899900001",
+      "creditlimit": 20000,
+      "isActive": true,
+      "taxcode": 2
+}
+
+###
